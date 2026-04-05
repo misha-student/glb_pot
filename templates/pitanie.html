@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Климатолог | Питание</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #f0f7f0;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      color: #1e2f2e;
+      line-height: 1.4;
+      transition: opacity 0.3s ease;
+    }
+    .fade-out { opacity: 0; pointer-events: none; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      background: #e0f0e4;
+      padding: 0.6rem 1.2rem;
+      border-radius: 40px;
+      text-decoration: none;
+      color: #1f6e43;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      font-size: 1rem;
+    }
+    .back-link i { margin-right: 6px; }
+    .back-link:hover { background: #c8e0cf; }
+    h1 { font-size: 2.2rem; color: #1d4d2d; display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+    .card { background: white; border-radius: 32px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+    h2 { color: #2c5e3f; border-left: 5px solid #48b47b; padding-left: 1rem; margin-bottom: 1rem; }
+    ul { list-style: none; margin: 1rem 0; }
+    li { margin-bottom: 1rem; display: flex; gap: 12px; align-items: baseline; }
+    li i { color: #2ecc71; width: 24px; }
+    .science { background: #fef9e6; border-radius: 24px; padding: 1.5rem; border-left: 5px solid #f39c12; }
+    .footer { margin-top: 3rem; text-align: center; color: #235b3a; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <a href="/" class="back-link">← На главную</a>
+  <h1><i class="fas fa-home"></i> Дома: энергоэффективность и экологичный быт</h1>
+  <div class="card">
+    <h2>🥗 Конкретные шаги</h2>
+    <ul>
+      <li><i class="fas fa-seedling"></i> <strong>Сократите потребление красного мяса</strong> — особенно говядины и баранины.</li>
+      <li><i class="fas fa-shopping-basket"></i> <strong>Выбирайте локальные и сезонные продукты</strong> — меньше транспортировки.</li>
+      <li><i class="fas fa-trash-alt"></i> <strong>Боритесь с пищевыми отходами</strong> — планируйте меню, компостируйте.</li>
+      <li><i class="fas fa-carrot"></i> <strong>Растительная диета 2–3 дня в неделю</strong> — бобовые, овощи, злаки.</li>
+      <li><i class="fas fa-fish"></i> <strong>Выбирайте устойчивые морепродукты</strong> — с сертификацией MSC.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>📊 Научные данные</h2>
+    <div class="science">
+      <p>🥩 <strong>Животноводство генерирует 14,5% мировых выбросов парниковых газов</strong> (больше, чем весь транспорт!).</p>
+      <p>🌽 Производство 1 кг говядины выделяет ~60 кг CO₂-эквивалента, тогда как 1 кг чечевицы — всего 0,9 кг.</p>
+      <p>🍎 Если каждый третий человек перейдёт на растительную диету на 1 день в неделю, выбросы снизятся на ~1,2 млрд тонн CO₂ в год.</p>
+    </div>
+  </div>
+  <div class="footer"><i class="fas fa-leaf"></i> Измените рацион — повлияйте на климат</div>
+</div>
+<script>
+  document.getElementById('backButton').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.body.classList.add('fade-out');
+    setTimeout(() => {
+      window.location.href = 'index.html';
+    }, 350);
+  });
+</script>
+<div class="footer">
+    <i class="fas fa-globe-americas"></i> Каждый вклад имеет значение &nbsp;|&nbsp;
+    <a href="feedback" style="color: #1f6e43; text-decoration: none;">Обратная связь</a>
+</div>
+</body>
+</html>
